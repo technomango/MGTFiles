@@ -1,0 +1,6 @@
+.vironeer-sidebar {
+    width: 270px !important;
+}
+.vironeer-page-content {
+    width: calc(100% - 270px) !important;
+}
