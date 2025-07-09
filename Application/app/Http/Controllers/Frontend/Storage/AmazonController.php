@@ -33,8 +33,12 @@ class AmazonController extends Controller
                 return responseHandler($data);
             }
         } catch (Exception $e) {
-            return responseHandler(["type" => "error", 'msg' => lang('Storage provider error', 'upload zone')]);
-        }
+    return responseHandler([
+        "type" => "error",
+        // OJO: esto mostrará el error REAL del sistema/wasabi
+        'msg' => 'ERROR REAL: ' . $e->getMessage()
+    ]);
+}
     }
 
     public static function download($transferFile)
