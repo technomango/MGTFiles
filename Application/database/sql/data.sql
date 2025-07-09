@@ -1153,6 +1153,7 @@ CREATE TABLE `storage_providers` (
 INSERT INTO `storage_providers` (`id`, `name`, `symbol`, `handler`, `logo`, `credentials`, `instructions`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'Local Storage', 'local', 'App\\Http\\Controllers\\Frontend\\Storage\\LocalController', 'images/storage/local.png', '{}', NULL, 1, '2022-02-20 22:13:06', '2022-02-20 22:44:06'),
 (2, 'Amazon S3', 's3', 'App\\Http\\Controllers\\Frontend\\Storage\\AmazonController', 'images/storage/amazon.png', '{\"access_key_id\":null,\"secret_access_key\":null,\"default_region\":null,\"bucket\":null,\"url\":null}', NULL, 0, '2022-02-20 22:12:55', '2022-04-26 21:24:38');
+(3, 'Wasabi', 'wasabi', 'App\\Http\\Controllers\\Frontend\\Storage\\WasabiController', 'images/storage/wasabi.png', '{\"access_key_id\":null,\"secret_access_key\":null,\"default_region\":null,\"bucket\":null}', NULL, 0, '2022-02-20 22:12:55', '2022-04-26 21:24:38');
 
 -- --------------------------------------------------------
 
